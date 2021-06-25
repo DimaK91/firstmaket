@@ -133,9 +133,6 @@ body {
     flex-direction: column;
     justify-content: center;
     .main-2-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       padding: 0;
       margin-bottom: 70px;
       .w {
@@ -143,18 +140,17 @@ body {
         font-size: 250px;
         font-family: 'Roboto';
         font-weight: bold;
-        @include flex;
         text-transform: uppercase;
         position: absolute;
-        transform: translateY(-200px);
+        transform: translateY(-200px) translateX(-10px);
+
       }
 
       .we-are {
         font-size: 38px;
         color: #ffffff;
-        @include flex;
         position: relative;
-        transform: translateY(-50px);
+        transform: translateY(-40px) translateX(30px);
       }
     }
 
@@ -389,6 +385,7 @@ body {
 
 .main-7 {
   background: #ffffff;
+  position: relative;
 
   .container7 {
     height: 945px;
@@ -396,7 +393,7 @@ body {
     max-width: 1170px;
 
     .our {
-      font-size: 34px;
+      font-size: 30px;
       @include flex;
       text-transform: uppercase;
       font-family: 'Gotham Pro Medium';
